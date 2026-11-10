@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07070d">
+<title>NUEL Diamond Store | Cheap Free Fire Diamonds</title>
+<meta name="description" content="Top up Free Fire diamonds at the lowest prices. Fast, simple and secure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07070d; --card:rgba(255,255,255,.05); --line:rgba(255,255,255,.10);
+  --text:#f4f6ff; --muted:#9aa0b8; --cyan:#35e0ff; --violet:#8b5cff; --gold:#ffc94a;
+  --grad:linear-gradient(135deg,#35e0ff,#8b5cff);
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;min-height:100vh;overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom)}
+h1,h2,h3,.sora{font-family:Sora,Inter,sans-serif}
+.bg{position:fixed;inset:0;z-index:-1;background:
+  radial-gradient(600px 400px at 85% -5%,rgba(139,92,255,.35),transparent 60%),
+  radial-gradient(500px 400px at -5% 20%,rgba(53,224,255,.22),transparent 60%),
+  radial-gradient(500px 400px at 50% 110%,rgba(255,201,74,.12),transparent 60%),var(--bg)}
+.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(16px);background:rgba(7,7,13,.65);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+.logo svg{width:28px;height:28px}
+.logo span b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-cta{padding:9px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--text);text-decoration:none;font-size:14px;font-weight:600}
+.hero{padding:56px 0 28px;text-align:center}
+.pill{display:inline-flex;gap:8px;align-items:center;padding:7px 14px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:13px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:#2dff9a;box-shadow:0 0 12px #2dff9a}
+h1{font-size:clamp(34px,7vw,64px);line-height:1.05;margin:20px 0 14px;font-weight:800;letter-spacing:-1.5px}
+h1 em{font-style:normal;background:linear-gradient(135deg,#35e0ff,#8b5cff 60%,#ffc94a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);max-width:560px;margin:0 auto;font-size:clamp(15px,2.4vw,18px);line-height:1.6}
+.trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.trust div{font-size:13px;color:var(--muted);padding:8px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.trust b{color:var(--text)}
+section{padding:26px 0}
+.step-title{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.step-title i{font-style:normal;width:30px;height:30px;border-radius:10px;background:var(--grad);display:grid;place-items:center;font-weight:800;font-size:14px;color:#07070d}
+.step-title h2{font-size:clamp(18px,3vw,22px)}
+.field{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:6px;display:flex;align-items:center;gap:8px;transition:.2s}
+.field:focus-within{border-color:var(--cyan);box-shadow:0 0 0 4px rgba(53,224,255,.12)}
+.field input{flex:1;background:none;border:0;outline:0;color:var(--text);font:600 17px Inter;padding:14px 14px;min-width:0}
+.field input::placeholder{color:#6b718a;font-weight:500}
+.hint{color:var(--muted);font-size:13px;margin:10px 4px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+.pack{position:relative;text-align:left;color:inherit;font:inherit;cursor:pointer;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px 16px 16px;overflow:hidden;transition:transform .2s,border-color .2s,background .2s}
+.pack::before{content:"";position:absolute;inset:0;background:var(--grad);opacity:0;transition:.25s}
+.pack>*{position:relative}
+.pack:hover{transform:translateY(-4px);border-color:rgba(53,224,255,.5)}
+.pack.sel{border-color:var(--cyan);background:rgba(53,224,255,.07);box-shadow:0 10px 40px -12px rgba(53,224,255,.55)}
+.pack.sel::after{content:"✓";position:absolute;top:12px;right:12px;width:22px;height:22px;border-radius:50%;background:var(--cyan);color:#07070d;font-weight:800;font-size:13px;display:grid;place-items:center}
+.pack svg{width:38px;height:38px;filter:drop-shadow(0 6px 14px rgba(53,224,255,.5))}
+.amt{font:800 26px Sora;margin:10px 0 2px}
+.amt small{font-size:12px;color:var(--muted);font-weight:600;margin-left:4px}
+.price{font:700 17px Inter;color:var(--gold)}
+.usd{font-size:12px;color:var(--muted);margin-top:2px}
+.tag{position:absolute!important;top:0;left:0;padding:5px 12px;font-size:11px;font-weight:700;border-radius:0 0 14px 0;background:var(--gold);color:#201600}
+.checkout{position:sticky;bottom:12px;z-index:15;margin-top:26px;padding:14px;border-radius:22px;background:rgba(14,14,24,.82);backdrop-filter:blur(18px);border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 20px 60px -10px #000}
+.sum small{display:block;color:var(--muted);font-size:12px}
+.sum b{font:800 18px Sora}
+.btn{border:0;cursor:pointer;font:700 16px Inter;color:#07070d;background:var(--grad);padding:15px 26px;border-radius:16px;transition:.2s;white-space:nowrap}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.btn:disabled{opacity:.35;cursor:not-allowed;transform:none}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.how div{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}
+.how h3{font-size:16px;margin:10px 0 6px}
+.how p{font-size:14px;color:var(--muted);line-height:1.55}
+.how .n{font:800 28px Sora;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+footer{padding:36px 0 60px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7;border-top:1px solid var(--line);margin-top:30px}
+/* modal */
+.modal{position:fixed;inset:0;z-index:50;display:none;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.65);backdrop-filter:blur(6px)}
+.modal.open{display:flex}
+.sheet{width:min(520px,100%);max-height:94vh;overflow:auto;background:#0e0e1a;border:1px solid var(--line);border-radius:28px 28px 0 0;padding:24px 20px calc(24px + env(safe-area-inset-bottom));animation:up .3s ease}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+@media(min-width:600px){.modal{align-items:center}.sheet{border-radius:28px}}
+.sheet h3{font-size:22px;margin-bottom:4px}
+.sheet .sub{color:var(--muted);font-size:14px;margin-bottom:18px}
+.order{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:14px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:7px 0;font-size:14px}
+.row span{color:var(--muted)}
+.row b{text-align:right;word-break:break-all}
+.total{border-top:1px dashed var(--line);margin-top:6px;padding-top:12px}
+.total b{color:var(--gold);font:800 22px Sora}
+.acct{background:linear-gradient(135deg,rgba(53,224,255,.12),rgba(139,92,255,.16));border:1px solid rgba(53,224,255,.3);border-radius:18px;padding:16px;margin-bottom:14px}
+.acct .lbl{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+.acct .num{font:800 30px Sora;letter-spacing:2px;margin:4px 0 2px}
+.acct .nm{font-weight:600;margin-bottom:12px}
+.copy{border:1px solid var(--line);background:rgba(255,255,255,.08);color:var(--text);font:600 14px Inter;padding:10px 14px;border-radius:12px;cursor:pointer}
+.copy.ok{background:#2dff9a;color:#04210f}
+.warn{font-size:13px;color:#ffd98a;background:rgba(255,201,74,.09);border:1px solid rgba(255,201,74,.25);border-radius:14px;padding:12px;margin-bottom:14px;line-height:1.55}
+.wa{display:block;width:100%;text-align:center;text-decoration:none;color:#03210f;background:#25d366;padding:16px;border-radius:16px;font:700 16px Inter;margin-bottom:10px}
+button.wa{border:0;cursor:pointer}
+.wa:disabled{opacity:.35;cursor:not-allowed}
+.up{display:block;text-align:center;padding:16px;border:2px dashed rgba(53,224,255,.5);border-radius:16px;color:var(--cyan);font-weight:600;cursor:pointer;margin-bottom:12px;background:rgba(53,224,255,.05)}
+.prev{display:none;width:100%;max-height:220px;object-fit:contain;border-radius:14px;border:1px solid var(--line);margin-bottom:12px;background:#000}
+.note{font-size:12.5px;color:var(--muted);text-align:center;margin-bottom:6px;line-height:1.5}
+.close{width:100%;background:none;border:0;color:var(--muted);padding:10px;font:600 14px Inter;cursor:pointer}
+.reveal{opacity:0;transform:translateY(16px);transition:.6s}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:420px){.grid{grid-template-columns:repeat(2,1fr);gap:10px}.pack{padding:16px 12px}.btn{padding:14px 18px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <symbol id="gem" viewBox="0 0 64 64">
+      <polygon points="32,58 4,24 16,8 48,8 60,24" fill="url(#g1)"/>
+      <polygon points="32,58 4,24 60,24" fill="url(#g2)"/>
+      <polygon points="16,8 22,24 32,8 42,24 48,8" fill="rgba(255,255,255,.35)"/>
+      <polygon points="4,24 60,24 48,8 16,8" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.5"/>
+    </symbol>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8ff3ff"/><stop offset="1" stop-color="#35a8ff"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#35e0ff"/><stop offset="1" stop-color="#6a4dff"/></linearGradient>
+  </defs>
+</svg>
+
+<nav><div class="wrap">
+  <div class="logo"><svg><use href="#gem"/></svg><span>NUEL <b>DIAMOND</b> STORE</span></div>
+  <a class="nav-cta" href="#packs">Buy now</a>
+</div></nav>
+
+<header class="hero wrap">
+  <span class="pill"><i class="dot"></i> Open now · Fast delivery</span>
+  <h1>Cheap Free Fire <em>Diamonds</em><br>top-up in minutes</h1>
+  <p>Pick your pack, enter your Player ID and pay by bank transfer. Simple, secure and the best prices around.</p>
+  <div class="trust">
+    <div><b>⚡ Fast</b> delivery</div>
+    <div><b>💎 Lowest</b> prices</div>
+    <div><b>🔒 No password</b> needed</div>
+    <div><b>💬 24/7</b> support</div>
+  </div>
+</header>
+
+<main class="wrap" id="packs">
+  <section class="reveal">
+    <div class="step-title"><i>1</i><h2>Enter your Player ID</h2></div>
+    <div class="field">
+      <input id="uid" inputmode="numeric" autocomplete="off" placeholder="e.g. 1234567890" maxlength="14" aria-label="Free Fire Player ID">
+    </div>
+    <p class="hint">Find it in Free Fire: tap your profile picture, your ID is under your name.</p>
+  </section>
+
+  <section class="reveal">
+    <div class="step-title"><i>2</i><h2>Choose a diamond pack</h2></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <div class="checkout reveal">
+    <div class="sum"><small id="sumLbl">No pack selected</small><b id="sumAmt">₦0</b></div>
+    <button class="btn" id="payBtn" disabled>Pay now</button>
+  </div>
+
+  <section class="reveal" style="margin-top:34px">
+    <div class="step-title"><i>3</i><h2>How it works</h2></div>
+    <div class="how">
+      <div><span class="n">01</span><h3>Select a pack</h3><p>Enter your Player ID and tap the diamond pack you want.</p></div>
+      <div><span class="n">02</span><h3>Make payment</h3><p>Transfer the exact amount to our PalmPay account shown at checkout.</p></div>
+      <div><span class="n">03</span><h3>Get your diamonds</h3><p>Send your order on WhatsApp and receive diamonds in your account.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  © <span id="yr"></span> NUEL Diamond Store. All rights reserved.
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mt">
+  <div class="sheet">
+    <h3 id="mt">Complete your payment</h3>
+    <p class="sub">Transfer the exact amount below, then confirm on WhatsApp.</p>
+
+    <div class="order">
+      <div class="row"><span>Order ID</span><b id="oId"></b></div>
+      <div class="row"><span>Player ID</span><b id="oUid"></b></div>
+      <div class="row"><span>Pack</span><b id="oPack"></b></div>
+      <div class="row total"><span>Amount to pay</span><b id="oAmt"></b></div>
+    </div>
+
+    <div class="acct">
+      <div class="lbl">PalmPay account number</div>
+      <div class="num" id="acctNum">8140235769</div>
+      <div class="nm">Emmanuel Abraham · PalmPay</div>
+      <button class="copy" id="copyNum">Copy account number</button>
+      <button class="copy" id="copyAmt">Copy amount</button>
+    </div>
+
+    <div class="warn">⚠️ Use the Order ID as the transfer narration/remark if your bank allows it. After paying, tap the green button and send your payment receipt.</div>
+
+    <label class="up" for="shotIn" id="shotLbl">📸 Tap to upload payment screenshot</label>
+    <input type="file" id="shotIn" accept="image/*" hidden>
+    <img id="prev" class="prev" alt="Payment screenshot preview">
+    <button class="wa" id="waBtn" type="button" disabled>I've paid · Send on WhatsApp</button>
+    <p class="note" id="waNote">Upload your payment screenshot first, then send it to us on WhatsApp.</p>
+    <button class="close" id="closeBtn">Cancel</button>
+  </div>
+</div>
+
+<script>
+/* ============ EDIT THESE ============ */
+const STORE = {
+  whatsapp: "234XXXXXXXXXX",          // your WhatsApp number, country code first, no + or spaces
+  account:  "8140235769",
+  bank:     "PalmPay",
+  name:     "Emmanuel Abraham"
+};
+const PACKS = [            // diamonds, USD, NGN
+  {d:100,  usd:0.79,  ngn:1200},
+  {d:210,  usd:1.59,  ngn:2400},
+  {d:310,  usd:2.39,  ngn:3600},
+  {d:520,  usd:3.99,  ngn:6000, tag:"Popular"},
+  {d:1060, usd:7.99,  ngn:12000},
+  {d:2180, usd:15.99, ngn:24000, tag:"Best value"},
+  {d:5600, usd:39.99, ngn:60000, tag:"Mega"}
+];
+/* ==================================== */
+
+const $ = s => document.querySelector(s);
+const naira = n => "₦" + n.toLocaleString("en-NG");
+let selected = null;
+
+const grid = $("#grid");
+PACKS.forEach((p,i)=>{
+  const b = document.createElement("button");
+  b.className = "pack"; b.type = "button";
+  b.innerHTML = (p.tag?`<span class="tag">${p.tag}</span>`:"") +
+    `<svg><use href="#gem"/></svg>
+     <div class="amt">${p.d.toLocaleString()}<small>diamonds</small></div>
+     <div class="price">${naira(p.ngn)}</div>
+     <div class="usd">$${p.usd.toFixed(2)}</div>`;
+  b.onclick = () => {
+    selected = p;
+    document.querySelectorAll(".pack").forEach(x=>x.classList.remove("sel"));
+    b.classList.add("sel");
+    update();
+  };
+  grid.appendChild(b);
+});
+
+const uid = $("#uid");
+try{ uid.value = localStorage.getItem("nuel_uid") || ""; }catch(e){}
+uid.addEventListener("input", ()=>{
+  uid.value = uid.value.replace(/\D/g,"");
+  try{ localStorage.setItem("nuel_uid", uid.value); }catch(e){}
+  update();
+});
+
+function validId(){ return /^\d{6,14}$/.test(uid.value); }
+function update(){
+  $("#sumLbl").textContent = selected ? `${selected.d.toLocaleString()} diamonds` : "No pack selected";
+  $("#sumAmt").textContent = selected ? naira(selected.ngn) : "₦0";
+  $("#payBtn").disabled = !(selected && validId());
+  $("#payBtn").textContent = !validId() ? "Enter Player ID" : (!selected ? "Choose a pack" : "Pay now");
+}
+update();
+
+let order = null;
+$("#payBtn").onclick = () => {
+  const id = "ND" + Date.now().toString(36).toUpperCase().slice(-6);
+  order = {id, uid: uid.value, pack: selected};
+  $("#oId").textContent = id;
+  $("#oUid").textContent = uid.value;
+  $("#oPack").textContent = `${selected.d.toLocaleString()} diamonds`;
+  $("#oAmt").textContent = naira(selected.ngn);
+  $("#acctNum").textContent = STORE.account;
+  const msg = `Hello NUEL Diamond Store 👋\n\nI have made payment.\n\nOrder ID: ${id}\nPlayer ID: ${uid.value}\nPack: ${selected.d} diamonds\nAmount: ${naira(selected.ngn)}\n\nReceipt attached.`;
+  order.msg = msg;
+  resetShot();
+  $("#modal").classList.add("open");
+  document.body.style.overflow = "hidden";
+};
+function closeModal(){ $("#modal").classList.remove("open"); document.body.style.overflow = ""; }
+$("#closeBtn").onclick = closeModal;
+$("#modal").addEventListener("click", e => { if(e.target.id === "modal") closeModal(); });
+document.addEventListener("keydown", e => { if(e.key === "Escape") closeModal(); });
+
+async function copy(btn, text, label){
+  try{ await navigator.clipboard.writeText(text); }
+  catch(e){
+    const t = document.createElement("textarea"); t.value = text; document.body.appendChild(t);
+    t.select(); document.execCommand("copy"); t.remove();
+  }
+  btn.classList.add("ok"); btn.textContent = "Copied ✓";
+  setTimeout(()=>{ btn.classList.remove("ok"); btn.textContent = label; }, 1600);
+}
+$("#copyNum").onclick = e => copy(e.target, STORE.account, "Copy account number");
+$("#copyAmt").onclick = e => copy(e.target, String(order.pack.ngn), "Copy amount");
+
+/* ---- payment screenshot gate ---- */
+let shot = null;
+function resetShot(){
+  shot = null;
+  $("#shotIn").value = "";
+  $("#prev").style.display = "none";
+  $("#waBtn").disabled = true;
+  $("#shotLbl").textContent = "📸 Tap to upload payment screenshot";
+  $("#waNote").textContent = "Upload your payment screenshot first, then send it to us on WhatsApp.";
+}
+$("#shotIn").addEventListener("change", e => {
+  const f = e.target.files[0];
+  if(!f) return;
+  if(!f.type.startsWith("image/")){ resetShot(); $("#waNote").textContent = "Please choose an image (screenshot) file."; return; }
+  shot = f;
+  const p = $("#prev");
+  p.src = URL.createObjectURL(f);
+  p.style.display = "block";
+  $("#shotLbl").textContent = "✓ Screenshot added · tap to change";
+  $("#waBtn").disabled = false;
+  $("#waNote").textContent = "Great! Now tap the green button to send it to us.";
+});
+$("#waBtn").onclick = async () => {
+  if(!shot) return;
+  try{
+    if(navigator.canShare && navigator.canShare({files:[shot]})){
+      await navigator.share({files:[shot], text: order.msg});
+      $("#waNote").textContent = "In the share menu choose WhatsApp, then pick our chat and send.";
+      return;
+    }
+  }catch(err){ if(err && err.name === "AbortError") return; }
+  window.open(`https://wa.me/${STORE.whatsapp}?text=${encodeURIComponent(order.msg)}`, "_blank");
+  $("#waNote").textContent = "WhatsApp opened. Attach the same screenshot in the chat and send.";
+};
+
+$("#yr").textContent = new Date().getFullYear();
+
+const io = new IntersectionObserver(es => es.forEach(x => { if(x.isIntersecting){ x.target.classList.add("in"); io.unobserve(x.target);} }), {threshold:.1});
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
